@@ -1,0 +1,37 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["es2017"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@mocks/*": ["./src/mocks/*"],
+      "@assets/*": ["./assets/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@config/*": ["./src/config/*"],
+      "@services/*": ["./src/services/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@themes/*": ["./src/themes/*"],
+      "@functions/*": ["./src/functions/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@views/*": ["./src/views/*"]
+    },
+    "allowSyntheticDefaultImports": true, 
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules", "mobile/babel.configmobile/metro.config.jsnfig.js", "jest.config.js"
+  ]
+}
